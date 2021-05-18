@@ -12,14 +12,142 @@
 </head>
 
 <body>
-    <!-- Put HTML Here -->
-    
-    <!-- 
-        Font Awesome v5 Free - See https://fontawesome.com/start for more info
-        Example usage: <i class="fas fa-toggle-off"></i>
-     -->
-    <script src="https://kit.fontawesome.com/4c55e184d1.js" crossorigin="anonymous"></script>
-    <script src="assets/app.js"></script>
+   <!-- Put HTML Here -->
+   <div id="container">
+
+      <header id="header" class="font-metropolis">
+
+         <a href="#"><img class="logo" src="assets/img/logo-relay.png" alt="Firefox Relay logo"></a>
+
+         <nav id="icon-nav"  class="menu flex-container-hz">
+            <a class="menu-item nav-icon" href="#"><i class="fas fa-th"></i></a>
+            <a class="menu-item" href="#"><img class="profile-img nav-image" src="" alt=""></a>
+         </nav>
+
+         <button id="expand-menu-button" class="menu menu-button" type="button" name="button">
+             Menu
+             <i id="menu-open-icon" class="fas fa-chevron-down text-icon"></i>
+         </button>
+
+         <nav id="header-nav"  class="menu flex-container-hz mobile-flex-flip">
+            <a class="menu-item active" href="#">Home</a>
+            <a class="menu-item" href="#">FAQ</a>
+         </nav>
+
+      </header>
+
+      <section class="content font-metropolis">
+         <div class="content-container">
+
+            <div class="flex-container-hz mobile-flex-flip">
+               <h1 class="main-title">Manage your Relay aliases</h1>
+               <p class="secondary-title"><span class="bold">4</span> remaining aliases</p>
+            </div>
+
+            <hr class="solid divider">
+
+            <button id="gen-button" class="add-button" type="button" name="gen-button">
+                <i class="fas fa-plus"></i>
+                Generate New Alias
+            </button>
+         </div>
+
+         <div class="content-container">
+            <div class="flex-container-hz mobile-flex-flip">
+               <a id="add-account-action" href="#" class="action disabled">Add account name<i class="fas fa-pencil-alt text-icon"></i></a>
+               <p id="forwarding-toggle" class="action">forwarding
+                  <label class="switch">
+                  <input type="checkbox">
+                  <span class="slider round"></span>
+                  </label>
+               </p>
+            </div>
+
+            <div class="flex-container-hz card">
+               <div class="">
+                  <p class="email">alias@relay.firefox.com<i class="fas fa-copy text-icon disabled"></i></p>
+                  <button id="show-alias-details" class="action disabled">
+                      <span id="show-details-text">Show Details</span>
+                      <i id="details-open-icon" class="fas fa-chevron-down text-icon"></i>
+                  </button>
+               </div>
+               <div id="desktop-metrics" class="flex-container-hz">
+                  <div class="metric">
+                     <p class="metric-value disabled">0</p>
+                     <p class="metric-name disabled">Blocked</p>
+                  </div>
+                  <div class="metric">
+                     <p class="metric-value">0</p>
+                     <p class="metric-name">Forwarded</p>
+                  </div>
+               </div>
+            </div>
+
+            <div id="card-bottom-mobile" class="card-bottom hidden">
+               <div class="flex-container-hz">
+                  <div class="">
+                     <p class="metric-name disabled">Blocked</p>
+                     <p class="metric-name">Forwarded</p>
+                     <p class="metric-name">Created:</p>
+                  </div>
+                  <div class="">
+                     <p class="metric-value disabled">0</p>
+                     <p class="metric-value">0</p>
+                     <p class="metric-name">May 14, 2021</p>
+                  </div>
+               </div>
+
+               <button id="" class="delete-button" type="button" name="gen-button">
+                   Delete
+               </button>
+
+            </div>
+
+            <div id="card-bottom-desktop" class="card-bottom hidden">
+               <div class="flex-container-hz">
+                  <div class="flex-container-hz">
+                     <div class="details">
+                        <p class=disabled >Created:</p>
+                        <p>May 14, 2021</p>
+                     </div>
+
+                     <div class="details">
+                        <p class=disabled >Forward emails to</p>
+                        <p>mcrawford@mozilla.com</p>
+                     </div>
+                  </div>
+                  <button class="delete-button" type="button" name="gen-button">
+                      Delete
+                  </button>
+               </div>
+            </div>
+
+            <p class="body font-inter">Firefox Relay supports email forwarding (including attachments) of email up to 150KB in size</p>
+         </div>
+      </section>
+
+      <footer class="footer font-metropolis flex-container-hz mobile-flex-flip">
+         <!-- <a class="mozilla-logo" href="#"> -->
+             <img class="logo" src="assets/img/logo-mozilla.svg" alt="Mozilla logo">
+         <!-- </a> -->
+         <nav class="menu flex-container-hz mobile-flex-flip">
+            <a class="menu-item" href="#">Privacy</a>
+            <a class="menu-item" href="#">Relay Terms</a>
+            <a class="menu-item" href="#">Legal</a>
+            <a class="menu-item nav-icon" href="#">
+            <i class="fab fa-github"></i>
+            </a>
+         </nav>
+      </footer>
+   </div>
+   <!--
+      Font Awesome v5 Free - See https://fontawesome.com/start for more info
+      Example usage: <i class="fas fa-toggle-off"></i>
+      -->
+   <script src="https://kit.fontawesome.com/4c55e184d1.js" crossorigin="anonymous"></script>
+   <script src="assets/app.js"></script>
 </body>
+
+
 
 </html>
